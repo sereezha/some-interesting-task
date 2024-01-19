@@ -1,0 +1,47 @@
+@import '@/styles/mixins.scss';
+
+.btn {
+  display: inline-block;
+  font-weight: 600;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  border: none;
+  padding: 16px 24px;
+  border-radius: 12px;
+  appearance: none;
+  transition-duration: 0.3s;
+  transition-property: background-color, color;
+  color: var(--white-100);
+  background-color: var(--orange-100);
+  font-size: 14px;
+  font-family: inherit;
+  cursor: pointer;
+
+  @include mq(sm) {
+    font-size: 20px;
+  }
+
+  &:focus,
+  &:hover {
+    text-decoration: none;
+    outline-color: transparent;
+  }
+
+  &:focus-visible {
+    outline: 2px solid;
+    outline-offset: 2px;
+  }
+
+  &:hover {
+    background-color: var(--orange-80);
+  }
+
+  &:active {
+    background-color: var(--orange-120);
+  }
+}
+
+.fullWidth {
+  width: 100%;
+}

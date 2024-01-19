@@ -1,0 +1,17 @@
+@import '@/styles/mixins.scss';
+
+.earnedList {
+  display: grid;
+  gap: 8px;
+  align-content: center;
+
+  @include mq_max(sm) {
+    max-width: 320px;
+  }
+
+  @include mq_max(xl) {
+    max-width: 376px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}

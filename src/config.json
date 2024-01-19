@@ -1,0 +1,293 @@
+{
+  "questions": [
+    {
+      "id": "3",
+      "question": "What is the chemical symbol for the element gold?",
+      "options": [
+        { "id": "1", "letter": "A", "answer": "Ag" },
+        { "id": "2", "letter": "B", "answer": "Au" },
+        { "id": "3", "letter": "C", "answer": "Fe" },
+        { "id": "4", "letter": "D", "answer": "Hg" }
+      ],
+      "correct_answers": ["B"],
+      "money": 0
+    },
+    {
+      "id": "4",
+      "question": "Which planet is known as the 'Red Planet'?",
+      "options": [
+        { "id": "1", "letter": "A", "answer": "Mars" },
+        { "id": "2", "letter": "B", "answer": "Jupiter" },
+        { "id": "3", "letter": "C", "answer": "Venus" },
+        { "id": "4", "letter": "D", "answer": "Saturn" }
+      ],
+      "correct_answers": ["A"],
+      "money": 0
+    },
+    {
+      "id": "1",
+      "question": "What is the capital of France?",
+      "options": [
+        { "id": "1", "letter": "A", "answer": "London" },
+        { "id": "2", "letter": "B", "answer": "Paris" },
+        { "id": "3", "letter": "C", "answer": "Berlin" },
+        { "id": "4", "letter": "D", "answer": "Paris2" }
+      ],
+      "correct_answers": ["B", "D"],
+      "money": 500
+    },
+    {
+      "id": "2",
+      "question": "Who wrote the famous novel 'Pride and Prejudice'?",
+      "options": [
+        { "id": "1", "letter": "A", "answer": "Charles Dickens" },
+        { "id": "2", "letter": "B", "answer": "Jane Austen" },
+        { "id": "3", "letter": "C", "answer": "Mark Twain" },
+        { "id": "4", "letter": "D", "answer": "William Shakespeare" }
+      ],
+      "correct_answers": ["B"],
+      "money": 500
+    },
+    {
+      "id": "23",
+      "question": "Who painted the famous artwork 'The Last Supper'?",
+      "options": [
+        { "id": "1", "letter": "A", "answer": "Pablo Picasso" },
+        { "id": "2", "letter": "B", "answer": "Leonardo da Vinci" },
+        { "id": "3", "letter": "C", "answer": "Vincent van Gogh" },
+        { "id": "4", "letter": "D", "answer": "Salvador Dalí" }
+      ],
+      "correct_answers": ["B"],
+      "money": 1000
+    },
+    {
+      "id": "24",
+      "question": "What is the largest desert in the world?",
+      "options": [
+        { "id": "1", "letter": "A", "answer": "Sahara Desert" },
+        { "id": "2", "letter": "B", "answer": "Gobi Desert" },
+        { "id": "3", "letter": "C", "answer": "Kalahari Desert" },
+        { "id": "4", "letter": "D", "answer": "Arabian Desert" }
+      ],
+      "correct_answers": ["A"],
+      "money": 1000
+    },
+
+    {
+      "id": "5",
+      "question": "Who painted the Mona Lisa?",
+      "options": [
+        { "id": "1", "letter": "A", "answer": "Pablo Picasso" },
+        { "id": "2", "letter": "B", "answer": "Vincent van Gogh" },
+        { "id": "3", "letter": "C", "answer": "Leonardo da Vinci" },
+        { "id": "4", "letter": "D", "answer": "Salvador Dalí" }
+      ],
+      "correct_answers": ["C"],
+      "money": 2000
+    },
+    {
+      "id": "6",
+      "question": "What is the tallest mountain in the world?",
+      "options": [
+        { "id": "1", "letter": "A", "answer": "Mount Everest" },
+        { "id": "2", "letter": "B", "answer": "Kilimanjaro" },
+        { "id": "3", "letter": "C", "answer": "Mount Fuji" },
+        { "id": "4", "letter": "D", "answer": "Mount McKinley" }
+      ],
+      "correct_answers": ["A"],
+      "money": 2000
+    },
+    {
+      "id": "7",
+      "question": "Who is the author of the Harry Potter book series?",
+      "options": [
+        { "id": "1", "letter": "A", "answer": "J.R.R. Tolkien" },
+        { "id": "2", "letter": "B", "answer": "J.K. Rowling" },
+        { "id": "3", "letter": "C", "answer": "George R.R. Martin" },
+        { "id": "4", "letter": "D", "answer": "Stephen King" }
+      ],
+      "correct_answers": ["B"],
+      "money": 4000
+    },
+    {
+      "id": "8",
+      "question": "What is the currency of Japan?",
+      "options": [
+        { "id": "1", "letter": "A", "answer": "Yen" },
+        { "id": "2", "letter": "B", "answer": "Euro" },
+        { "id": "3", "letter": "C", "answer": "Dollar" },
+        { "id": "4", "letter": "D", "answer": "Pound" }
+      ],
+      "correct_answers": ["A"],
+      "money": 4000
+    },
+    {
+      "id": "9",
+      "question": "Who was the first person to walk on the moon?",
+      "options": [
+        { "id": "1", "letter": "A", "answer": "Neil Armstrong" },
+        { "id": "2", "letter": "B", "answer": "Buzz Aldrin" },
+        { "id": "3", "letter": "C", "answer": "Yuri Gagarin" },
+        { "id": "4", "letter": "D", "answer": "Alan Shepard" }
+      ],
+      "correct_answers": ["A"],
+      "money": 8000
+    },
+    {
+      "id": "10",
+      "question": "What is the largest ocean in the world?",
+      "options": [
+        { "id": "1", "letter": "A", "answer": "Atlantic Ocean" },
+        { "id": "2", "letter": "B", "answer": "Indian Ocean" },
+        { "id": "3", "letter": "C", "answer": "Pacific Ocean" },
+        { "id": "4", "letter": "D", "answer": "Arctic Ocean" }
+      ],
+      "correct_answers": ["C"],
+      "money": 8000
+    },
+    {
+      "id": "11",
+      "question": "Who is the current President of the United States?",
+      "options": [
+        { "id": "1", "letter": "A", "answer": "Joe Biden" },
+        { "id": "2", "letter": "B", "answer": "Donald Trump" },
+        { "id": "3", "letter": "C", "answer": "Barack Obama" },
+        { "id": "4", "letter": "D", "answer": "George W. Bush" }
+      ],
+      "correct_answers": ["A"],
+      "money": 16000
+    },
+    {
+      "id": "12",
+      "question": "Which famous scientist developed the theory of relativity?",
+      "options": [
+        { "id": "1", "letter": "A", "answer": "Isaac Newton" },
+        { "id": "2", "letter": "B", "answer": "Albert Einstein" },
+        { "id": "3", "letter": "C", "answer": "Nikola Tesla" },
+        { "id": "4", "letter": "D", "answer": "Marie Curie" }
+      ],
+      "correct_answers": ["B"],
+      "money": 16000
+    },
+    {
+      "id": "13",
+      "question": "What is the largest organ in the human body?",
+      "options": [
+        { "id": "1", "letter": "A", "answer": "Liver" },
+        { "id": "2", "letter": "B", "answer": "Brain" },
+        { "id": "3", "letter": "C", "answer": "Heart" },
+        { "id": "4", "letter": "D", "answer": "Skin" }
+      ],
+      "correct_answers": ["D"],
+      "money": 32000
+    },
+    {
+      "id": "14",
+      "question": "Who painted the famous artwork 'The Starry Night'?",
+      "options": [
+        { "id": "1", "letter": "A", "answer": "Claude Monet" },
+        { "id": "2", "letter": "B", "answer": "Vincent van Gogh" },
+        { "id": "3", "letter": "C", "answer": "Pablo Picasso" },
+        { "id": "4", "letter": "D", "answer": "Leonardo da Vinci" }
+      ],
+      "correct_answers": ["B"],
+      "money": 32000
+    },
+    {
+      "id": "15",
+      "question": "Which country is known for inventing pizza?",
+      "options": [
+        { "id": "1", "letter": "A", "answer": "Italy" },
+        { "id": "2", "letter": "B", "answer": "United States" },
+        { "id": "3", "letter": "C", "answer": "Greece" },
+        { "id": "4", "letter": "D", "answer": "France" }
+      ],
+      "correct_answers": ["A"],
+      "money": 64000
+    },
+    {
+      "id": "16",
+      "question": "Who wrote the play 'Romeo and Juliet'?",
+      "options": [
+        { "id": "1", "letter": "A", "answer": "William Shakespeare" },
+        { "id": "2", "letter": "B", "answer": "Oscar Wilde" },
+        { "id": "3", "letter": "C", "answer": "Tennessee Williams" },
+        { "id": "4", "letter": "D", "answer": "George Bernard Shaw" }
+      ],
+      "correct_answers": ["A"],
+      "money": 64000
+    },
+    {
+      "id": "17",
+      "question": "What is the largest continent by land area?",
+      "options": [
+        { "id": "1", "letter": "A", "answer": "Africa" },
+        { "id": "2", "letter": "B", "answer": "Europe" },
+        { "id": "3", "letter": "C", "answer": "Asia" },
+        { "id": "4", "letter": "D", "answer": "North America" }
+      ],
+      "correct_answers": ["C"],
+      "money": 125000
+    },
+    {
+      "id": "18",
+      "question": "Who is the author of the famous novel 'To Kill a Mockingbird'?",
+      "options": [
+        { "id": "1", "letter": "A", "answer": "F. Scott Fitzgerald" },
+        { "id": "2", "letter": "B", "answer": "Harper Lee" },
+        { "id": "3", "letter": "C", "answer": "Ernest Hemingway" },
+        { "id": "4", "letter": "D", "answer": "Mark Twain" }
+      ],
+      "correct_answers": ["B"],
+      "money": 125000
+    },
+    {
+      "id": "19",
+      "question": "What is the chemical symbol for the element iron?",
+      "options": [
+        { "id": "1", "letter": "A", "answer": "Ir" },
+        { "id": "2", "letter": "B", "answer": "Fe" },
+        { "id": "3", "letter": "C", "answer": "Au" },
+        { "id": "4", "letter": "D", "answer": "Pb" }
+      ],
+      "correct_answers": ["B"],
+      "money": 250000
+    },
+    {
+      "id": "20",
+      "question": "Who painted the ceiling of the Sistine Chapel?",
+      "options": [
+        { "id": "1", "letter": "A", "answer": "Leonardo da Vinci" },
+        { "id": "2", "letter": "B", "answer": "Michelangelo" },
+        { "id": "3", "letter": "C", "answer": "Rembrandt" },
+        { "id": "4", "letter": "D", "answer": "Pablo Picasso" }
+      ],
+      "correct_answers": ["B"],
+      "money": 250000
+    },
+    {
+      "id": "21",
+      "question": "Who is the main protagonist in J.R.R. Tolkien's 'The Lord of the Rings'?",
+      "options": [
+        { "id": "1", "letter": "A", "answer": "Frodo Baggins" },
+        { "id": "2", "letter": "B", "answer": "Aragorn" },
+        { "id": "3", "letter": "C", "answer": "Gandalf" },
+        { "id": "4", "letter": "D", "answer": "Legolas" }
+      ],
+      "correct_answers": ["A"],
+      "money": 500000
+    },
+    {
+      "id": "22",
+      "question": "Which planet is known for its prominent rings?",
+      "options": [
+        { "id": "1", "letter": "A", "answer": "Mars" },
+        { "id": "2", "letter": "B", "answer": "Jupiter" },
+        { "id": "3", "letter": "C", "answer": "Saturn" },
+        { "id": "4", "letter": "D", "answer": "Uranus" }
+      ],
+      "correct_answers": ["C"],
+      "money": 500000
+    }
+  ]
+}

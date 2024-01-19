@@ -1,0 +1,218 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "text": "What is the capital of France?",
+      "answers": [
+        { "id": 1, "text": "London", "isCorrect": false },
+        { "id": 2, "text": "Paris", "isCorrect": true },
+        { "id": 3, "text": "Berlin", "isCorrect": false },
+        { "id": 4, "text": "Madrid", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Which of the following are European capitals?",
+      "answers": [
+        { "id": 5, "text": "London", "isCorrect": true },
+        { "id": 6, "text": "Paris", "isCorrect": true },
+        { "id": 7, "text": "Beijing", "isCorrect": false },
+        { "id": 8, "text": "Tokyo", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 3,
+      "text": "What is the largest planet in our solar system?",
+      "answers": [
+        { "id": 9, "text": "Earth", "isCorrect": false },
+        { "id": 10, "text": "Jupiter", "isCorrect": true },
+        { "id": 11, "text": "Mars", "isCorrect": false },
+        { "id": 12, "text": "Venus", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 4,
+      "text": "Which chemical element has the symbol 'O'?",
+      "answers": [
+        { "id": 13, "text": "Oxygen", "isCorrect": true },
+        { "id": 14, "text": "Gold", "isCorrect": false },
+        { "id": 15, "text": "Iron", "isCorrect": false },
+        { "id": 16, "text": "Carbon", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 5,
+      "text": "What is the currency of Japan?",
+      "answers": [
+        { "id": 17, "text": "Won", "isCorrect": false },
+        { "id": 18, "text": "Yuan", "isCorrect": false },
+        { "id": 19, "text": "Yen", "isCorrect": true },
+        { "id": 20, "text": "Ringgit", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 6,
+      "text": "Who wrote 'Romeo and Juliet'?",
+      "answers": [
+        { "id": 21, "text": "Charles Dickens", "isCorrect": false },
+        { "id": 22, "text": "William Shakespeare", "isCorrect": true },
+        { "id": 23, "text": "Jane Austen", "isCorrect": false },
+        { "id": 24, "text": "Mark Twain", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 7,
+      "text": "In what year did World War II end?",
+      "answers": [
+        { "id": 25, "text": "1943", "isCorrect": false },
+        { "id": 26, "text": "1945", "isCorrect": true },
+        { "id": 27, "text": "1950", "isCorrect": false },
+        { "id": 28, "text": "1939", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 8,
+      "text": "What is the largest mammal on Earth?",
+      "answers": [
+        { "id": 29, "text": "Elephant", "isCorrect": false },
+        { "id": 30, "text": "Blue Whale", "isCorrect": true },
+        { "id": 31, "text": "Giraffe", "isCorrect": false },
+        { "id": 32, "text": "Gorilla", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 9,
+      "text": "Who painted the Mona Lisa?",
+      "answers": [
+        { "id": 33, "text": "Pablo Picasso", "isCorrect": false },
+        { "id": 34, "text": "Leonardo da Vinci", "isCorrect": true },
+        { "id": 35, "text": "Vincent van Gogh", "isCorrect": false },
+        { "id": 36, "text": "Claude Monet", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 10,
+      "text": "What is the capital of Australia?",
+      "answers": [
+        { "id": 37, "text": "Sydney", "isCorrect": false },
+        { "id": 38, "text": "Melbourne", "isCorrect": false },
+        { "id": 39, "text": "Canberra", "isCorrect": true },
+        { "id": 40, "text": "Brisbane", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 11,
+      "text": "Which planet is known as the 'Red Planet'?",
+      "answers": [
+        { "id": 41, "text": "Mars", "isCorrect": true },
+        { "id": 42, "text": "Venus", "isCorrect": false },
+        { "id": 43, "text": "Jupiter", "isCorrect": false },
+        { "id": 44, "text": "Saturn", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 12,
+      "text": "Who wrote 'To Kill a Mockingbird'?",
+      "answers": [
+        { "id": 45, "text": "Harper Lee", "isCorrect": true },
+        { "id": 46, "text": "J.K. Rowling", "isCorrect": false },
+        { "id": 47, "text": "George Orwell", "isCorrect": false },
+        { "id": 48, "text": "Ernest Hemingway", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 13,
+      "text": "What is the main ingredient in guacamole?",
+      "answers": [
+        { "id": 49, "text": "Tomato", "isCorrect": false },
+        { "id": 50, "text": "Avocado", "isCorrect": true },
+        { "id": 51, "text": "Onion", "isCorrect": false },
+        { "id": 52, "text": "Cilantro", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 14,
+      "text": "In which year did Christopher Columbus reach the Americas?",
+      "answers": [
+        { "id": 53, "text": "1492", "isCorrect": true },
+        { "id": 54, "text": "1500", "isCorrect": false },
+        { "id": 55, "text": "1601", "isCorrect": false },
+        { "id": 56, "text": "1405", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 15,
+      "text": "What is the smallest prime number?",
+      "answers": [
+        { "id": 57, "text": "0", "isCorrect": false },
+        { "id": 58, "text": "1", "isCorrect": false },
+        { "id": 59, "text": "2", "isCorrect": true },
+        { "id": 60, "text": "3", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 16,
+      "text": "Who developed the theory of relativity?",
+      "answers": [
+        { "id": 61, "text": "Isaac Newton", "isCorrect": false },
+        { "id": 62, "text": "Albert Einstein", "isCorrect": true },
+        { "id": 63, "text": "Galileo Galilei", "isCorrect": false },
+        { "id": 64, "text": "Stephen Hawking", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 17,
+      "text": "What is the national animal of China?",
+      "answers": [
+        { "id": 65, "text": "Panda", "isCorrect": true },
+        { "id": 66, "text": "Lion", "isCorrect": false },
+        { "id": 67, "text": "Tiger", "isCorrect": false },
+        { "id": 68, "text": "Elephant", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 18,
+      "text": "Who painted 'Starry Night'?",
+      "answers": [
+        { "id": 69, "text": "Leonardo da Vinci", "isCorrect": false },
+        { "id": 70, "text": "Vincent van Gogh", "isCorrect": true },
+        { "id": 71, "text": "Pablo Picasso", "isCorrect": false },
+        { "id": 72, "text": "Claude Monet", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 19,
+      "text": "What is the capital of Brazil?",
+      "answers": [
+        { "id": 73, "text": "Buenos Aires", "isCorrect": false },
+        { "id": 74, "text": "Santiago", "isCorrect": false },
+        { "id": 75, "text": "Brasília", "isCorrect": true },
+        { "id": 76, "text": "Lima", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 20,
+      "text": "What is the largest ocean on Earth?",
+      "answers": [
+        { "id": 77, "text": "Atlantic Ocean", "isCorrect": false },
+        { "id": 78, "text": "Indian Ocean", "isCorrect": false },
+        { "id": 79, "text": "Southern Ocean", "isCorrect": false },
+        { "id": 80, "text": "Pacific Ocean", "isCorrect": true }
+      ]
+    }
+  ],
+  "prizes": [
+    { "id": 1, "amount": 500 },
+    { "id": 2, "amount": 1000 },
+    { "id": 3, "amount": 2000 },
+    { "id": 4, "amount": 4000 },
+    { "id": 5, "amount": 8000 },
+    { "id": 6, "amount": 16000 },
+    { "id": 7, "amount": 32000 },
+    { "id": 8, "amount": 64000 },
+    { "id": 9, "amount": 125000 },
+    { "id": 10, "amount": 250000 },
+    { "id": 11, "amount": 500000 },
+    { "id": 12, "amount": 1000000 }
+  ]
+}

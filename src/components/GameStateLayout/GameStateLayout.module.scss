@@ -1,0 +1,82 @@
+@import '@/styles/mixins.scss';
+
+.container {
+  display: grid;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+
+  &.start {
+    background: linear-gradient(
+      to bottom right,
+      transparent 50%,
+      var(--orange-5) 50%
+    );
+  }
+
+  &.end {
+    background-color: var(--black-5);
+  }
+
+  @include mq(md) {
+    grid-template-areas:
+      'image title'
+      'image button';
+  }
+}
+
+.titleWrap {
+  display: grid;
+  gap: 8px;
+  text-align: center;
+  @include mq(md) {
+    text-align: left;
+  }
+}
+
+.subtitle {
+  font-size: 18px;
+  color: var(--black-100);
+  opacity: 0.5;
+  font-weight: 600;
+
+  @include mq(md) {
+    font-size: 32px;
+  }
+}
+
+.image {
+  margin-bottom: 40px;
+}
+
+.content {
+  display: grid;
+  gap: 64px;
+  max-width: 624px;
+  width: 100%;
+}
+
+.title {
+  margin-bottom: 60px;
+  font-size: 32px;
+  line-height: 1.15;
+  text-align: center;
+  font-weight: 600;
+
+  @include mq(md) {
+    margin-bottom: 0;
+    text-align: left;
+    font-size: 56px;
+  }
+}
+
+.button {
+  margin-top: auto;
+  @include mq(md) {
+    max-width: 296px;
+  }
+  > * {
+    width: 100%;
+  }
+}

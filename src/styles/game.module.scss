@@ -1,0 +1,131 @@
+@import '@/styles/mixins.scss';
+
+.page {
+  --page-background-color: var(--black-5);
+
+  display: grid;
+  grid-template-rows: auto 1fr;
+  background-color: var(--page-background-color);
+  min-height: 100vh;
+
+  @include mq(xl) {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 376px;
+  }
+}
+
+.burger {
+  justify-self: end;
+  display: flex;
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: var(--container-horizontal-paddings);
+}
+
+.earned {
+  display: grid;
+  background-color: var(--white-100);
+  overflow: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  @include mq_max(xl) {
+    order: -1;
+  }
+}
+
+.earnedDesktop {
+  display: none;
+  @include mq(xl) {
+    display: grid;
+  }
+}
+
+.earnedMobile {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+  background-color: var(--page-background-color);
+
+  &.visible {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  @include mq(xl) {
+    display: none;
+  }
+}
+
+.burger {
+  position: relative;
+  z-index: 2;
+  @include mq(xl) {
+    display: none;
+  }
+}
+
+.content {
+  display: grid;
+  gap: 20px;
+  padding: var(--container-horizontal-paddings);
+  @include mq(md) {
+    padding: 133px 80px 122px;
+  }
+}
+
+.question {
+  font-size: 18px;
+  line-height: 1.11;
+  padding: 96px 0 0;
+  align-self: center;
+
+  @include mq(md) {
+    max-width: 640px;
+    width: 100%;
+    font-size: 32px;
+    padding-top: 0;
+    align-self: start;
+  }
+}
+
+.answers {
+  display: grid;
+  row-gap: 8px;
+  margin-top: auto;
+  margin-bottom: 24px;
+
+  @include mq_max(sm) {
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+  @include mq(xs) {
+    --margin: calc(var(--container-horizontal-paddings) * -1);
+    margin-left: var(--margin);
+    margin-right: var(--margin);
+  }
+
+  @include mq(sm) {
+    grid-template-columns: repeat(2, minmax(390px, auto));
+    justify-content: start;
+  }
+}
+
+.answer {
+  list-style: none;
+
+  &.disabled {
+    pointer-events: none;
+  }
+}

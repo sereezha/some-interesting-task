@@ -11,23 +11,24 @@ export function useLockBodyScroll(
       return () => {};
     }
 
-    const originalOverflow = document.body.style.overflow;
-    const originalPaddingRight = document.body.style.paddingRight;
+    const target = document.documentElement;
+    const originalOverflow = target.style.overflow;
+    const originalPaddingRight = target.style.paddingRight;
 
-    document.body.style.overflow = 'hidden';
+    target.style.overflow = 'hidden';
 
     const root = document.getElementById(rootId);
     const scrollBarWidth = root ? root.offsetWidth - root.scrollWidth : 0;
 
     if (scrollBarWidth) {
-      document.body.style.paddingRight = `${scrollBarWidth}px`;
+      target.style.paddingRight = `${scrollBarWidth}px`;
     }
 
     return () => {
-      document.body.style.overflow = originalOverflow;
+      target.style.overflow = originalOverflow;
 
       if (scrollBarWidth) {
-        document.body.style.paddingRight = originalPaddingRight;
+        target.style.paddingRight = originalPaddingRight;
       }
     };
   }, [locked, rootId]);

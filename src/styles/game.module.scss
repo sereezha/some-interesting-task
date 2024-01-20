@@ -1,9 +1,5 @@
 @import '@/styles/mixins.scss';
 
-.root:global {
-  background-color: var(--page-background-color);
-}
-
 .page {
   --page-background-color: var(--black-5);
 
@@ -89,15 +85,18 @@
 .question {
   font-size: 18px;
   line-height: 1.11;
-  padding: 96px 0 0;
+  padding: 86px 0 0;
   align-self: center;
 
-  @include mq(md) {
+  @include mq(sm) {
     max-width: 640px;
     width: 100%;
     font-size: 32px;
-    padding-top: 0;
     align-self: start;
+  }
+
+  @include mq(md) {
+    padding-top: 0;
   }
 }
 

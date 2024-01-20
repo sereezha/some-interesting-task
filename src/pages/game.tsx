@@ -63,6 +63,15 @@ const Game: React.FC = () => {
           {earnedList}
         </div>
       </main>
+      <style
+        jsx
+        global>
+        {`
+          body {
+            background: var(--black-5);
+          }
+        `}
+      </style>
     </>
   );
 };

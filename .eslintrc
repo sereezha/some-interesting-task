@@ -67,6 +67,15 @@
     "@typescript-eslint/default-param-last": 0,
     "react/prop-types": 0,
     "react/react-in-jsx-scope": 0,
-    "react/function-component-definition": 0
+    "react/function-component-definition": 0,
+      "react/no-unknown-property": [
+        2,
+        {
+          "ignore": [
+            "jsx",
+            "global"
+          ]
+        }
+      ]
   }
 }

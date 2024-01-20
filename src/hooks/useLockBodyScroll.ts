@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 
 export function useLockBodyScroll(
   initialLocked = false,
-  rootId = 'root'
+  rootId = '__next'
 ): [boolean, (locked: boolean) => void] {
   const [locked, setLocked] = useState(initialLocked);
 

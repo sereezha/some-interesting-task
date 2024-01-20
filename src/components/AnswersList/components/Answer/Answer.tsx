@@ -27,7 +27,9 @@ const Answer: React.FC<Props> = ({
       <span className={clsx(styles.box, styles.boxMobile)}>
         <AnswerMobile />
       </span>
-      <span className={styles.content}>{children}</span>
+      <span className={styles.content}>
+        <span className={styles.contentText}>{children}</span>
+      </span>
     </button>
   );
 };

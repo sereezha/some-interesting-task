@@ -5,6 +5,7 @@
   row-gap: 8px;
   margin-top: auto;
   margin-bottom: 24px;
+  counter-reset: listStyle;
 
   @include mq_max(sm) {
     max-width: 320px;
@@ -22,5 +23,11 @@
   @include mq(sm) {
     grid-template-columns: repeat(2, minmax(390px, auto));
     justify-content: start;
+  }
+}
+
+.answer {
+  &.disabled {
+    pointer-events: none;
   }
 }

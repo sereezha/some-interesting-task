@@ -8,7 +8,7 @@
   display: grid;
   gap: 8px;
   width: 100%;
-  padding: 20px 24px;
+  padding: 20px 40px;
   border: none;
   background: none;
   cursor: pointer;
@@ -16,14 +16,18 @@
   line-height: 1.14;
   text-align: left;
   color: var(--black-100);
+  counter-increment: listStyle;
+  -webkit-tap-highlight-color: transparent;
 
   .box {
     fill: var(--background-color);
     stroke: var(--border-color);
   }
 
-  &:hover:not(.selected):not(.correct):not(.wrong) {
-    --border-color: var(--orange-100);
+  @media (hover: hover) {
+    &:hover:not(.selected):not(.correct):not(.wrong) {
+      --border-color: var(--orange-100);
+    }
   }
 
   &.selected {
@@ -43,13 +47,31 @@
   }
 
   @include mq(sm) {
-    padding: 24px 32px;
+    padding: 24px 45px;
     font-size: 20px;
   }
 }
 
 .content {
   isolation: isolate;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  min-width: 0;
+
+  &::before {
+    content: counter(listStyle, lower-alpha);
+    text-transform: uppercase;
+    color: var(--orange-100);
+    font-weight: 600;
+    flex-shrink: 0;
+  }
+}
+
+.contentText {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .box {

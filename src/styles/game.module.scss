@@ -1,6 +1,6 @@
 @import '@/styles/mixins.scss';
 
-body {
+.root:global {
   background-color: var(--page-background-color);
 }
 

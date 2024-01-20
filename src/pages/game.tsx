@@ -1,36 +1,31 @@
 import React, { useEffect, useState } from 'react';
 import Head from 'next/head';
 import clsx from 'clsx';
-import { GameActionCreator, useGameContext } from '@/context/GameProvider';
+import { useGameContext } from '@/context/game/GameProvider';
 import AnswersList from '@/components/AnswersList/AnswersList';
 import EarnedList from '@/components/EarnedList/EarnedList';
 import Menu from '@/assets/menu.svg';
 import Close from '@/assets/close.svg';
 import styles from '@/styles/game.module.scss';
+import { AppRoute } from '@/constants/route';
+import { useRouter } from 'next/router';
 
-interface Props {}
-
-const Game: React.FC<Props> = () => {
+const Game: React.FC = () => {
   const [isEarnedVisible, setIsEarnedVisible] = useState(false);
   const {
-    state: { currentQuestion, question, questions, hashMapPrizes, prizes },
-    dispatch,
+    state: { currentQuestion, question, questions, prizes },
   } = useGameContext();
+  const router = useRouter();
 
   useEffect(() => {
-    dispatch(GameActionCreator.setNextQuestion(questions[currentQuestion - 1]));
-  }, [currentQuestion, dispatch, questions]);
+    if (currentQuestion > questions.length && questions.length > 0) {
+      router.push(AppRoute.GAME_OVER.path);
+    }
+  }, [currentQuestion, questions.length, router]);
 
   const handleEarnedVisibility = () => {
     setIsEarnedVisible((prev) => !prev);
   };
-
-  useEffect(() => {
-    if (currentQuestion > 1) {
-      const earned = hashMapPrizes[currentQuestion - 1]!.amount;
-      dispatch(GameActionCreator.setEarned(earned));
-    }
-  }, [currentQuestion, hashMapPrizes, dispatch]);
 
   const earnedList = (
     <EarnedList

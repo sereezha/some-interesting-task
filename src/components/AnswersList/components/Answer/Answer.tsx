@@ -2,7 +2,7 @@ import clsx from 'clsx';
 import React from 'react';
 import AnswerDesktop from '@/assets/answer-desktop.svg';
 import AnswerMobile from '@/assets/answer-mobile.svg';
-import { AnswerState } from '@/types';
+import { AnswerState } from '@/types/game';
 import styles from './Answer.module.scss';
 
 interface Props

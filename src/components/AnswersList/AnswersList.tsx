@@ -1,10 +1,10 @@
 import React from 'react';
 import { useRouter } from 'next/navigation';
-import { GameActionCreator, useGameContext } from '@/context/GameProvider';
-import { sleep } from '@/utils';
+import { GameActionCreator, useGameContext } from '@/context/game/GameProvider';
+import { sleep } from '@/utils/common';
 import clsx from 'clsx';
-import { AnswerState, IAnswer } from '@/types';
 import { AppRoute } from '@/constants/route';
+import { IAnswer, AnswerState } from '@/types/game';
 import Answer from './components/Answer/Answer';
 import styles from './AnswersList.module.scss';
 
@@ -13,7 +13,7 @@ interface Props {}
 const AnswersList: React.FC<Props> = () => {
   const router = useRouter();
   const {
-    state: { answerState, selectedAnswer, question, currentQuestion },
+    state: { answerState, selectedAnswer, question },
     dispatch,
   } = useGameContext();
 
@@ -30,7 +30,7 @@ const AnswersList: React.FC<Props> = () => {
 
     await sleep(1000);
 
-    if (answer.isCorrect && currentQuestion !== 12) {
+    if (answer.isCorrect) {
       dispatch(GameActionCreator.moveToNextQuestion());
     } else {
       router.push(AppRoute.GAME_OVER.path);

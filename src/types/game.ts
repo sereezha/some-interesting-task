@@ -21,8 +21,3 @@ export enum AnswerState {
   CORRECT = 'correct',
   WRONG = 'wrong',
 }
-
-export interface IApiConfigData {
-  questions: IQuestion[];
-  prizes: IPrize[];
-}

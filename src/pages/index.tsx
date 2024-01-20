@@ -1,15 +1,15 @@
 import Head from 'next/head';
 import GameStateLayout from '@/components/GameStateLayout/GameStateLayout';
-import { GameActionCreator, useGameContext } from '@/context/GameProvider';
+import { useGameContext } from '@/context/game/GameProvider';
 import { useEffect } from 'react';
 import { AppRoute } from '@/constants/route';
 
 export default function Home() {
-  const { dispatch } = useGameContext();
+  const { handleResetGame } = useGameContext();
 
   useEffect(() => {
-    dispatch(GameActionCreator.resetGame());
-  }, [dispatch]);
+    handleResetGame();
+  }, [handleResetGame]);
 
   return (
     <>

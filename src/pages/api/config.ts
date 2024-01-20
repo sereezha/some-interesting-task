@@ -1,7 +1,6 @@
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from 'next';
 import config from '@/api/config.json';
-import { IApiConfigData } from '@/types';
+import { IApiConfigData } from '@/types/api';
 
 export default function handler(
   req: NextApiRequest,

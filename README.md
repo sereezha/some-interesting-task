@@ -15,3 +15,5 @@ You can start editing the page by modifying `pages/index.tsx`. The page auto-upd
 ## Tests
 
 1. Run tests: `yarn test` (with `--watch` if you need to "watch" them)
+
+<!-- додам додаткові зміни -->

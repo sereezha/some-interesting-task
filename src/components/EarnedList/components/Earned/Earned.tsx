@@ -1,7 +1,6 @@
 import clsx from 'clsx';
 import React from 'react';
-import EarnedBoxDesktop from '@/assets/earned-box-desktop.svg';
-import EarnedBoxMobile from '@/assets/earned-box-mobile.svg';
+import Hexagon from '@/components/Hexagon';
 import styles from './Earned.module.scss';
 
 interface Props {
@@ -17,12 +16,7 @@ const Earned: React.FC<Props> = ({ children, isDisabled, isActive }) => {
   });
   return (
     <div className={classes}>
-      <div className={clsx(styles.box, styles.boxDesktop)}>
-        <EarnedBoxDesktop />
-      </div>
-      <div className={clsx(styles.box, styles.boxMobile)}>
-        <EarnedBoxMobile />
-      </div>
+      <Hexagon className={styles.box} />
       <div className={styles.content}>{children}</div>
     </div>
   );

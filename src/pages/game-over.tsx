@@ -1,7 +1,7 @@
 import Head from 'next/head';
-import GameStateLayout from '@/components/GameStateLayout/GameStateLayout';
-import { useGameContext } from '@/context/game/GameProvider';
+import GameStateLayout from '@/components/GameStateLayout';
 import { AppRoute } from '@/constants/route';
+import { useGameContext } from '@/context/game';
 
 export default function GameOver() {
   const {

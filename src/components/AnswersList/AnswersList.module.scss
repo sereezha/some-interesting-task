@@ -14,12 +14,6 @@
     width: 100%;
   }
 
-  @include mq_max(xs) {
-    --margin: calc(var(--container-horizontal-paddings) * -1);
-    margin-left: var(--margin);
-    margin-right: var(--margin);
-  }
-
   @include mq(sm) {
     grid-template-columns: repeat(2, minmax(390px, auto));
     justify-content: start;
@@ -27,6 +21,12 @@
 }
 
 .answer {
+  @include mq_max(xs) {
+    --margin: calc(var(--container-horizontal-paddings) * -1);
+    margin-left: var(--margin);
+    margin-right: var(--margin);
+  }
+
   &.disabled {
     pointer-events: none;
   }

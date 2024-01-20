@@ -1,7 +1,7 @@
 import React from 'react';
 import { IPrize } from '@/types/game';
-import Earned from './components/Earned/Earned';
 import styles from './EarnedList.module.scss';
+import Earned from './components/Earned';
 
 interface Props {
   prizes: IPrize[];

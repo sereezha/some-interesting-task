@@ -44,17 +44,7 @@ const initialValue = {
   handleResetGame: () => {},
 };
 
-const GameContext = createContext<IContext>(initialValue);
-
-export const useGameContext = () => {
-  const context = useContext(GameContext);
-
-  if (!context) {
-    throw new Error('useGameContext must be used within a GameProvider');
-  }
-
-  return context;
-};
+export const GameContext = createContext<IContext>(initialValue);
 
 interface IGameActionCreator {
   [key: string]: (arg?: any) => Action;

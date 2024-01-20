@@ -1,8 +1,7 @@
 import clsx from 'clsx';
 import React from 'react';
-import AnswerDesktop from '@/assets/answer-desktop.svg';
-import AnswerMobile from '@/assets/answer-mobile.svg';
 import { AnswerState } from '@/types/game';
+import Hexagon from '@/components/Hexagon';
 import styles from './Answer.module.scss';
 
 interface Props
@@ -21,12 +20,10 @@ const Answer: React.FC<Props> = ({
       {...delegated}
       className={classes}
       type='button'>
-      <span className={clsx(styles.box, styles.boxDesktop)}>
-        <AnswerDesktop />
-      </span>
-      <span className={clsx(styles.box, styles.boxMobile)}>
-        <AnswerMobile />
-      </span>
+      <Hexagon
+        type='answer'
+        className={styles.box}
+      />
       <span className={styles.content}>
         <span className={styles.contentText}>{children}</span>
       </span>

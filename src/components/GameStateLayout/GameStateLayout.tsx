@@ -1,9 +1,9 @@
 import Image from 'next/image';
 import React from 'react';
 import clsx from 'clsx';
-import Button from '../Button/Button';
 import styles from './GameStateLayout.module.scss';
-import Container from '../Container/Container';
+import Button from '../Button';
+import Container from '../Container';
 
 interface Props {
   title: string;

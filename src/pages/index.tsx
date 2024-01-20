@@ -1,6 +1,6 @@
 import Head from 'next/head';
-import GameStateLayout from '@/components/GameStateLayout/GameStateLayout';
-import { useGameContext } from '@/context/game/GameProvider';
+import GameStateLayout from '@/components/GameStateLayout';
+import { useGameContext } from '@/context/game';
 import { useEffect } from 'react';
 import { AppRoute } from '@/constants/route';
 

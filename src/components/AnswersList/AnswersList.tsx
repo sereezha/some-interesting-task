@@ -1,12 +1,12 @@
 import React from 'react';
 import { useRouter } from 'next/navigation';
-import { GameActionCreator, useGameContext } from '@/context/game/GameProvider';
 import { sleep } from '@/utils/common';
 import clsx from 'clsx';
 import { AppRoute } from '@/constants/route';
 import { IAnswer, AnswerState } from '@/types/game';
-import Answer from './components/Answer/Answer';
+import { useGameContext, GameActionCreator } from '@/context/game';
 import styles from './AnswersList.module.scss';
+import Answer from './components/Answer';
 
 interface Props {}
 

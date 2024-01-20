@@ -1,5 +1,5 @@
-import GameProvider from '@/context/game/GameProvider';
-import { StorageProvider } from '@/context/storage/StorageProvider';
+import GameProvider from '@/context/game';
+import StorageProvider from '@/context/storage';
 import '@/styles/globals.scss';
 import type { AppProps } from 'next/app';
 import { Inter } from 'next/font/google';

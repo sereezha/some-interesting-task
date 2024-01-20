@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import Head from 'next/head';
 import clsx from 'clsx';
-import { useGameContext } from '@/context/game/GameProvider';
-import AnswersList from '@/components/AnswersList/AnswersList';
-import EarnedList from '@/components/EarnedList/EarnedList';
+import { useGameContext } from '@/context/game';
+import AnswersList from '@/components/AnswersList';
+import EarnedList from '@/components/EarnedList';
 import Menu from '@/assets/menu.svg';
 import Close from '@/assets/close.svg';
 import styles from '@/styles/game.module.scss';

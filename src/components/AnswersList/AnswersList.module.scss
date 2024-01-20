@@ -21,12 +21,6 @@
 }
 
 .answer {
-  @include mq_max(xs) {
-    --margin: calc(var(--container-horizontal-paddings) * -1);
-    margin-left: var(--margin);
-    margin-right: var(--margin);
-  }
-
   &.disabled {
     pointer-events: none;
   }

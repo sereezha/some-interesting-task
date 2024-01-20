@@ -6,7 +6,7 @@ import AnswersList from '@/components/AnswersList';
 import EarnedList from '@/components/EarnedList';
 import Menu from '@/assets/menu.svg';
 import Close from '@/assets/close.svg';
-import styles from '@/styles/game.module.scss';
+import styles from '@/styles/pages/game.module.scss';
 import { AppRoute } from '@/constants/route';
 import { useRouter } from 'next/router';
 import { useLockBodyScroll } from '@/hooks/useLockBodyScroll';

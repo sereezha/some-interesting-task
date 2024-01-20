@@ -1,11 +1,14 @@
 @import '@/styles/mixins.scss';
 
+body {
+  background-color: var(--page-background-color);
+}
+
 .page {
   --page-background-color: var(--black-5);
 
   display: grid;
   grid-template-rows: auto 1fr;
-  background-color: var(--page-background-color);
   min-height: 100vh;
   min-height: 100dvh;
 

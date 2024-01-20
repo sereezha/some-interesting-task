@@ -32,10 +32,10 @@ const Button: React.FC<Props> = ({
 
   return (
     <button
+      {...delegated}
       className={classes}
       // eslint-disable-next-line react/button-has-type
-      type={type}
-      {...delegated}>
+      type={type}>
       {children}
     </button>
   );

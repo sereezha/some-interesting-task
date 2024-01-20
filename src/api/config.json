@@ -15,9 +15,10 @@
       "text": "Which of the following are European capitals?",
       "answers": [
         { "id": 5, "text": "London", "isCorrect": true },
-        { "id": 6, "text": "Paris", "isCorrect": true },
+        { "id": 6, "text": "Kyiv", "isCorrect": false },
         { "id": 7, "text": "Beijing", "isCorrect": false },
-        { "id": 8, "text": "Tokyo", "isCorrect": false }
+        { "id": 8, "text": "Tokyo", "isCorrect": false },
+        { "id": 9, "text": "Paris", "isCorrect": true }
       ]
     },
     {

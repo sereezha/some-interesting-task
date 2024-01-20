@@ -9,6 +9,7 @@ import Close from '@/assets/close.svg';
 import styles from '@/styles/game.module.scss';
 import { AppRoute } from '@/constants/route';
 import { useRouter } from 'next/router';
+import { useLockBodyScroll } from '@/hooks/useLockBodyScroll';
 
 const Game: React.FC = () => {
   const [isEarnedVisible, setIsEarnedVisible] = useState(false);
@@ -26,6 +27,8 @@ const Game: React.FC = () => {
   const handleEarnedVisibility = () => {
     setIsEarnedVisible((prev) => !prev);
   };
+
+  useLockBodyScroll(isEarnedVisible);
 
   const earnedList = (
     <EarnedList

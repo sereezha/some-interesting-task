@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Head from 'next/head';
 import clsx from 'clsx';
-import { useGameContext } from '@/context/game';
+import { GameActionCreator, useGameContext } from '@/context/game';
 import AnswersList from '@/components/AnswersList';
 import EarnedList from '@/components/EarnedList';
 import Menu from '@/assets/menu.svg';
@@ -15,14 +15,16 @@ const Game: React.FC = () => {
   const [isEarnedVisible, setIsEarnedVisible] = useState(false);
   const {
     state: { currentQuestion, question, questions, prizes },
+    dispatch,
   } = useGameContext();
   const router = useRouter();
 
   useEffect(() => {
     if (currentQuestion > questions.length && questions.length > 0) {
-      router.push(AppRoute.GAME_OVER.path);
+      dispatch(GameActionCreator.gameOver());
+      router.replace(AppRoute.GAME_OVER.path);
     }
-  }, [currentQuestion, questions.length, router]);
+  }, [currentQuestion, dispatch, questions.length, router]);
 
   const handleEarnedVisibility = () => {
     setIsEarnedVisible((prev) => !prev);

@@ -13,6 +13,7 @@ export interface IState {
   questions: IQuestion[];
   prizes: IPrize[];
   hashMapPrizes: IHashMapPrizes;
+  isGameOver: boolean;
 }
 
 export enum ActionType {
@@ -23,6 +24,7 @@ export enum ActionType {
   RESET_GAME = 'RESET_GAME',
   SET_CONFIG = 'SET_CONFIG',
   RESTORE_GAME = 'RESTORE_GAME',
+  GAME_OVER = 'GAME_OVER',
 }
 
 export type ResetGame = { type: ActionType.RESET_GAME };
@@ -51,6 +53,12 @@ export type RestoreGame = {
   type: ActionType.RESTORE_GAME;
   payload: IState;
 };
+export type GameOver = {
+  type: ActionType.GAME_OVER;
+  payload: {
+    isGameOver: boolean;
+  };
+};
 
 export type Action =
   | ResetGame
@@ -58,4 +66,5 @@ export type Action =
   | SetAnswerState
   | SetAnswer
   | SetConfig
-  | RestoreGame;
+  | RestoreGame
+  | GameOver;

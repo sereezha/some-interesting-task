@@ -36,6 +36,7 @@ const initialState: IState = {
   questions: [],
   prizes: [],
   hashMapPrizes: {},
+  isGameOver: false,
 };
 
 const initialValue = {
@@ -70,6 +71,12 @@ export const GameActionCreator: IGameActionCreator = {
   }),
   moveToNextQuestion: () => ({
     type: ActionType.MOVE_TO_NEXT_QUESTION,
+  }),
+  gameOver: () => ({
+    type: ActionType.GAME_OVER,
+    payload: {
+      isGameOver: true,
+    },
   }),
   resetGame: () => ({
     type: ActionType.RESET_GAME,
@@ -123,6 +130,11 @@ const reducer = (state = initialState, action: Action) => {
         currentQuestion,
         earned,
         question,
+      });
+    }
+    case ActionType.GAME_OVER: {
+      return extend(state, {
+        isGameOver: action.payload.isGameOver,
       });
     }
     case ActionType.RESET_GAME: {

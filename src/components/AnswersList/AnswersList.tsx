@@ -33,7 +33,8 @@ const AnswersList: React.FC<Props> = () => {
     if (answer.isCorrect) {
       dispatch(GameActionCreator.moveToNextQuestion());
     } else {
-      router.push(AppRoute.GAME_OVER.path);
+      dispatch(GameActionCreator.gameOver());
+      router.replace(AppRoute.GAME_OVER.path);
     }
   };
 
